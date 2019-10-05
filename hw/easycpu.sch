@@ -1,0 +1,65 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6000 1500 1050 2700
+U 5D98FACA
+F0 "addressGen" 50
+F1 "addressGen.sch" 50
+F2 "Addr0" I L 6000 1600 50 
+F3 "Addr1" I L 6000 1700 50 
+F4 "Addr2" I L 6000 1800 50 
+F5 "Addr3" I L 6000 1900 50 
+F6 "Addr4" I L 6000 2000 50 
+F7 "Addr5" I L 6000 2100 50 
+F8 "Addr6" I L 6000 2200 50 
+F9 "Addr7" I L 6000 2300 50 
+F10 "Addr8" I L 6000 2400 50 
+F11 "Addr9" I L 6000 2500 50 
+F12 "Addr10" I L 6000 2600 50 
+F13 "Addr11" I L 6000 2700 50 
+F14 "Addr12" I L 6000 2800 50 
+F15 "Addr13" I L 6000 2900 50 
+F16 "Addr14" I L 6000 3000 50 
+F17 "Addr15" I L 6000 3100 50 
+F18 "Off0" I L 6000 3250 50 
+F19 "Off1" I L 6000 3350 50 
+F20 "Off2" I L 6000 3450 50 
+F21 "Off3" I L 6000 3550 50 
+F22 "Off4" I L 6000 3650 50 
+F23 "Off5" I L 6000 3750 50 
+F24 "Off6" I L 6000 3850 50 
+F25 "Off7" I L 6000 3950 50 
+F26 "OffEn" I L 6000 4100 50 
+F27 "AddrOut0" O R 7050 1600 50 
+F28 "AddrOut1" O R 7050 1700 50 
+F29 "AddrOut2" O R 7050 1800 50 
+F30 "AddrOut3" O R 7050 1900 50 
+F31 "AddrOut4" O R 7050 2000 50 
+F32 "AddrOut5" O R 7050 2100 50 
+F33 "AddrOut6" O R 7050 2200 50 
+F34 "AddrOut7" O R 7050 2300 50 
+F35 "AddrOut8" O R 7050 2400 50 
+F36 "AddrOut9" O R 7050 2500 50 
+F37 "AddrOut10" O R 7050 2600 50 
+F38 "AddrOut11" O R 7050 2700 50 
+F39 "AddrOut12" O R 7050 2800 50 
+F40 "AddrOut13" O R 7050 2900 50 
+F41 "AddrOut14" O R 7050 3000 50 
+F42 "AddrOut15" O R 7050 3100 50 
+$EndSheet
+Text Notes 6400 6950 0    50   ~ 0
+Easy 8-bit CPU
+$EndSCHEMATC
