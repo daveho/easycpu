@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+LIBS:easycpu-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ya68k:MAX708 U300
+U 1 1 5DACE8BC
+P 4600 3150
+F 0 "U300" H 4600 3637 60  0000 C CNN
+F 1 "MAX708" H 4600 3531 60  0000 C CNN
+F 2 "" H 4600 3150 60  0000 C CNN
+F 3 "" H 4600 3150 60  0000 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW300
+U 1 1 5DACF043
+P 3250 3250
+F 0 "SW300" H 3250 3535 50  0000 C CNN
+F 1 "SW_Push" H 3250 3444 50  0000 C CNN
+F 2 "" H 3250 3450 50  0001 C CNN
+F 3 "" H 3250 3450 50  0001 C CNN
+	1    3250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3250 3450 3250
+Wire Wire Line
+	3050 3250 2900 3250
+Wire Wire Line
+	2900 3250 2900 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5DACFB48
+P 2900 3400
+F 0 "#PWR?" H 2900 3150 50  0001 C CNN
+F 1 "GND" H 2905 3227 50  0000 C CNN
+F 2 "" H 2900 3400 50  0001 C CNN
+F 3 "" H 2900 3400 50  0001 C CNN
+	1    2900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3050 3800 3050
+Wire Wire Line
+	4000 2950 3800 2950
+Wire Wire Line
+	3800 2950 3800 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5DACFE61
+P 3800 3550
+F 0 "#PWR?" H 3800 3300 50  0001 C CNN
+F 1 "GND" H 3805 3377 50  0000 C CNN
+F 2 "" H 3800 3550 50  0001 C CNN
+F 3 "" H 3800 3550 50  0001 C CNN
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3050 3800 3400
+Wire Wire Line
+	4000 3400 3800 3400
+Connection ~ 3800 3400
+Wire Wire Line
+	3800 3400 3800 3550
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAD0F68
+P 3800 2850
+F 0 "#PWR?" H 3800 2700 50  0001 C CNN
+F 1 "VCC" H 3817 3023 50  0000 C CNN
+F 2 "" H 3800 2850 50  0001 C CNN
+F 3 "" H 3800 2850 50  0001 C CNN
+	1    3800 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 7050 6700 0    50   ~ 0
+reset
+$Comp
+L device:LED D300
+U 1 1 5DAD1CEC
+P 5900 2450
+F 0 "D300" V 5939 2332 50  0000 R CNN
+F 1 "LED" V 5848 2332 50  0000 R CNN
+F 2 "" H 5900 2450 50  0001 C CNN
+F 3 "" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 2600
+$Comp
+L device:R R300
+U 1 1 5DAD397C
+P 5900 2000
+F 0 "R300" H 5970 2046 50  0000 L CNN
+F 1 "R" H 5970 1955 50  0000 L CNN
+F 2 "" V 5830 2000 50  0001 C CNN
+F 3 "" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2300 5900 2150
+Wire Wire Line
+	5900 1850 5900 1700
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAD4BEE
+P 5900 1700
+F 0 "#PWR?" H 5900 1550 50  0001 C CNN
+F 1 "VCC" H 5917 1873 50  0000 C CNN
+F 2 "" H 5900 1700 50  0001 C CNN
+F 3 "" H 5900 1700 50  0001 C CNN
+	1    5900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2950 6600 2950
+Text Notes 4250 2550 0    50   ~ 0
+Reset generation
+Text Notes 6050 2650 0    50   ~ 0
+power indicator
+Text HLabel 6600 2950 2    50   Output ~ 0
+~RST
+$EndSCHEMATC

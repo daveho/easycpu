@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 13750 10625
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -78,5 +78,12 @@ F8 "D4" I L 3600 6900 50
 F9 "D5" I L 3600 7000 50 
 F10 "D6" I L 3600 7100 50 
 F11 "D7" I L 3600 7200 50 
+$EndSheet
+$Sheet
+S 1800 1400 650  200 
+U 5DACE71F
+F0 "reset" 50
+F1 "reset.sch" 50
+F2 "~RST" O R 2450 1500 50 
 $EndSheet
 $EndSCHEMATC
