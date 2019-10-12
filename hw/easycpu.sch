@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:easycpu-cache
 EELAYER 30 0
 EELAYER END
-$Descr USLetter 11000 8500
+$Descr User 13750 10625
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -60,6 +61,12 @@ F40 "AddrOut13" O R 7050 2900 50
 F41 "AddrOut14" O R 7050 3000 50 
 F42 "AddrOut15" O R 7050 3100 50 
 $EndSheet
-Text Notes 6400 6950 0    50   ~ 0
+Text Notes 9100 9100 0    50   ~ 0
 Easy 8-bit CPU
+$Sheet
+S 3600 6200 1450 2500
+U 5DA2EB51
+F0 "control" 50
+F1 "control.sch" 50
+$EndSheet
 $EndSCHEMATC
