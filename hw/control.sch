@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr User 15400 11900
 encoding utf-8
@@ -1247,14 +1247,6 @@ Wire Wire Line
 	4950 8600 4950 8450
 Wire Wire Line
 	4950 9600 4950 9750
-Wire Bus Line
-	5650 600  5650 3650
-Wire Bus Line
-	5850 700  5850 6600
-Wire Bus Line
-	6550 600  6550 8250
-Wire Bus Line
-	6350 700  6350 9050
 $Comp
 L power:VCC #PWR?
 U 1 1 5DB1ACB8
@@ -1277,4 +1269,200 @@ F 3 "" H 4950 9750 50  0001 C CNN
 	1    4950 9750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7150 2250 6700 2250
+Wire Wire Line
+	6700 2250 6700 2750
+Wire Wire Line
+	7150 2750 6700 2750
+Connection ~ 6700 2750
+Wire Wire Line
+	6700 2750 6700 2850
+Wire Wire Line
+	7150 2850 6700 2850
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 2850 6700 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5DA86BF3
+P 6700 2950
+F 0 "#PWR?" H 6700 2700 50  0001 C CNN
+F 1 "GND" H 6705 2777 50  0000 C CNN
+F 2 "" H 6700 2950 50  0001 C CNN
+F 3 "" H 6700 2950 50  0001 C CNN
+	1    6700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2550 7000 2550
+Wire Wire Line
+	6800 2550 6800 2500
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA966F2
+P 6800 2500
+F 0 "#PWR?" H 6800 2350 50  0001 C CNN
+F 1 "VCC" H 6817 2673 50  0000 C CNN
+F 2 "" H 6800 2500 50  0001 C CNN
+F 3 "" H 6800 2500 50  0001 C CNN
+	1    6800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2450 7000 2450
+Wire Wire Line
+	7000 2450 7000 2550
+Connection ~ 7000 2550
+Wire Wire Line
+	7000 2550 6800 2550
+Wire Wire Line
+	7150 4600 6700 4600
+Wire Wire Line
+	6700 4600 6700 5100
+Wire Wire Line
+	7150 5100 6700 5100
+Connection ~ 6700 5100
+Wire Wire Line
+	6700 5100 6700 5200
+Wire Wire Line
+	7150 5200 6700 5200
+Connection ~ 6700 5200
+Wire Wire Line
+	6700 5200 6700 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5DAB60F4
+P 6700 5300
+F 0 "#PWR?" H 6700 5050 50  0001 C CNN
+F 1 "GND" H 6705 5127 50  0000 C CNN
+F 2 "" H 6700 5300 50  0001 C CNN
+F 3 "" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4900 7000 4900
+Wire Wire Line
+	6800 4900 6800 4850
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAB60FC
+P 6800 4850
+F 0 "#PWR?" H 6800 4700 50  0001 C CNN
+F 1 "VCC" H 6817 5023 50  0000 C CNN
+F 2 "" H 6800 4850 50  0001 C CNN
+F 3 "" H 6800 4850 50  0001 C CNN
+	1    6800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4900
+Connection ~ 7000 4900
+Wire Wire Line
+	7000 4900 6800 4900
+Wire Wire Line
+	7150 6950 6700 6950
+Wire Wire Line
+	6700 6950 6700 7450
+Wire Wire Line
+	7150 7450 6700 7450
+Connection ~ 6700 7450
+Wire Wire Line
+	6700 7450 6700 7550
+Wire Wire Line
+	7150 7550 6700 7550
+Connection ~ 6700 7550
+Wire Wire Line
+	6700 7550 6700 7650
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC810E
+P 6700 7650
+F 0 "#PWR?" H 6700 7400 50  0001 C CNN
+F 1 "GND" H 6705 7477 50  0000 C CNN
+F 2 "" H 6700 7650 50  0001 C CNN
+F 3 "" H 6700 7650 50  0001 C CNN
+	1    6700 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 7250 7000 7250
+Wire Wire Line
+	6800 7250 6800 7200
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAC8116
+P 6800 7200
+F 0 "#PWR?" H 6800 7050 50  0001 C CNN
+F 1 "VCC" H 6817 7373 50  0000 C CNN
+F 2 "" H 6800 7200 50  0001 C CNN
+F 3 "" H 6800 7200 50  0001 C CNN
+	1    6800 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 7150 7000 7150
+Wire Wire Line
+	7000 7150 7000 7250
+Connection ~ 7000 7250
+Wire Wire Line
+	7000 7250 6800 7250
+Wire Wire Line
+	7150 9250 6700 9250
+Wire Wire Line
+	6700 9250 6700 9750
+Wire Wire Line
+	7150 9750 6700 9750
+Connection ~ 6700 9750
+Wire Wire Line
+	6700 9750 6700 9850
+Wire Wire Line
+	7150 9850 6700 9850
+Connection ~ 6700 9850
+Wire Wire Line
+	6700 9850 6700 9950
+$Comp
+L power:GND #PWR?
+U 1 1 5DADB612
+P 6700 9950
+F 0 "#PWR?" H 6700 9700 50  0001 C CNN
+F 1 "GND" H 6705 9777 50  0000 C CNN
+F 2 "" H 6700 9950 50  0001 C CNN
+F 3 "" H 6700 9950 50  0001 C CNN
+	1    6700 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 9550 7000 9550
+Wire Wire Line
+	6800 9550 6800 9500
+$Comp
+L power:VCC #PWR?
+U 1 1 5DADB61A
+P 6800 9500
+F 0 "#PWR?" H 6800 9350 50  0001 C CNN
+F 1 "VCC" H 6817 9673 50  0000 C CNN
+F 2 "" H 6800 9500 50  0001 C CNN
+F 3 "" H 6800 9500 50  0001 C CNN
+	1    6800 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 9450 7000 9450
+Wire Wire Line
+	7000 9450 7000 9550
+Connection ~ 7000 9550
+Wire Wire Line
+	7000 9550 6800 9550
+Wire Bus Line
+	5650 600  5650 3650
+Wire Bus Line
+	5850 700  5850 6600
+Wire Bus Line
+	6550 600  6550 8250
+Wire Bus Line
+	6350 700  6350 9050
 $EndSCHEMATC
