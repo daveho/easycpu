@@ -1,0 +1,14 @@
+# Instruction fetch: these microinstructions are executed
+# starting from ucode timestep 0 for ALL opcodes, even
+# invalid ones, even on system startup and no valid opcode
+# is in the instruction register.  As long as the microcode
+# sequencer is at time step 0, instruction fetch will occur.
+pattern insFetch *
+  AR <- PC
+  PC <- PC + 4; IR <- Mem
+end
+
+# No-op instruction.
+pattern nop 0x00
+  EndIns
+end
