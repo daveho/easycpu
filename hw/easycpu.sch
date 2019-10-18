@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr User 13750 10625
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -85,5 +85,11 @@ U 5DACE71F
 F0 "reset" 50
 F1 "reset.sch" 50
 F2 "~RST" O R 2450 1500 50 
+$EndSheet
+$Sheet
+S 2800 1300 1000 1400
+U 5DAB38C5
+F0 "clockReset" 50
+F1 "clockReset.sch" 50
 $EndSheet
 $EndSCHEMATC
