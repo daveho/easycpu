@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr User 15400 11900
 encoding utf-8
@@ -1256,12 +1256,12 @@ Connection ~ 1150 8000
 $Comp
 L 74xx:74LS08 U214
 U 1 1 5DCD4119
-P 12300 1150
-F 0 "U214" H 12300 1475 50  0000 C CNN
-F 1 "74HC08" H 12300 1384 50  0000 C CNN
-F 2 "" H 12300 1150 50  0001 C CNN
-F 3 "" H 12300 1150 50  0001 C CNN
-	1    12300 1150
+P 2450 10450
+F 0 "U214" H 2450 10775 50  0000 C CNN
+F 1 "74HC08" H 2450 10684 50  0000 C CNN
+F 2 "" H 2450 10450 50  0001 C CNN
+F 3 "" H 2450 10450 50  0001 C CNN
+	1    2450 10450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1462,12 +1462,12 @@ $EndComp
 $Comp
 L 74xx:74LS08 U214
 U 4 1 5E16C764
-P 2450 10450
-F 0 "U214" H 2450 10775 50  0000 C CNN
-F 1 "74HC08" H 2450 10684 50  0000 C CNN
-F 2 "" H 2450 10450 50  0001 C CNN
-F 3 "" H 2450 10450 50  0001 C CNN
-	4    2450 10450
+P 12300 1150
+F 0 "U214" H 12300 1475 50  0000 C CNN
+F 1 "74HC08" H 12300 1384 50  0000 C CNN
+F 2 "" H 12300 1150 50  0001 C CNN
+F 3 "" H 12300 1150 50  0001 C CNN
+	4    12300 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1523,14 +1523,6 @@ Wire Wire Line
 Connection ~ 9000 6650
 Text Notes 5050 8550 0    50   ~ 0
 ~R~ and ~W~ signals for\nexternal memory transactions
-Wire Bus Line
-	5650 600  5650 1600
-Wire Bus Line
-	5850 700  5850 4550
-Wire Bus Line
-	6550 600  6550 8250
-Wire Bus Line
-	6350 700  6350 9050
 Text Label 10600 1250 0    50   ~ 0
 uMem
 Text Label 10600 1350 0    50   ~ 0
@@ -1541,4 +1533,12 @@ Text Notes 3750 7500 0    50   ~ 0
 uMemRd is asserted for reads\n(but not writes)
 Text Label 2000 8000 0    50   ~ 0
 ~SCLK~
+Wire Bus Line
+	5650 600  5650 1600
+Wire Bus Line
+	5850 700  5850 4550
+Wire Bus Line
+	6550 600  6550 8250
+Wire Bus Line
+	6350 700  6350 9050
 $EndSCHEMATC
