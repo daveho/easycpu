@@ -5,13 +5,15 @@ SIGNALS = [
   '-uSeqClear',     # clear microprogram sequencer
   'uMem',           # memory transaction (read or write main memory)
   'uMemRd',         # memory transaction is a read
-  'uLoadAR',        # load address register from A bus
-  'uSendPC',        # PC sends output to A bus
+  '-uSendPC',       # PC sends output to A bus
   'uIncPC',         # increment program counter
+  '-uLoadPCLo',     # load low byte of program counter
+  '-uLoadPCHi',     # load high byte of program counter
+  'uLoadAR',        # load address register from A bus
 ];
 
 INSTRUCTIONS = [
-  [ 'AR <- PC',        ['uLoadAR', 'uSendPC'] ],
+  [ 'AR <- PC',        ['uLoadAR', '-uSendPC'] ],
   [ 'PC <- PC + 1',    ['uIncPC'] ],
   [ 'IR <- Mem',       ['uMem', 'uMemRd', 'uLoadIR'] ],
   [ 'EndIns',          ['-uSeqClear'] ],

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr User 15400 11900
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -63,7 +63,7 @@ Wire Wire Line
 	2650 1900 2100 1900
 Text Label 2150 1900 0    50   ~ 0
 ~uSeqClear
-Text Label 2150 2200 0    50   ~ 0
+Text Label 1450 2200 0    50   ~ 0
 CLK
 Wire Wire Line
 	2650 2000 2450 2000
@@ -619,17 +619,6 @@ Entry Wire Line
 	6350 8950 6450 9050
 Entry Wire Line
 	6350 9050 6450 9150
-$Comp
-L 74xx:74LS574 U209
-U 1 1 5DBF0B9D
-P 10000 1550
-F 0 "U209" H 10000 2531 50  0000 C CNN
-F 1 "74HCT574" H 10000 2440 50  0000 C CNN
-F 2 "" H 10000 1550 50  0001 C CNN
-F 3 "" H 10000 1550 50  0001 C CNN
-	1    10000 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 1050 8550 1050
 Wire Wire Line
@@ -646,36 +635,8 @@ Wire Wire Line
 	9500 1650 8550 1650
 Wire Wire Line
 	9500 1750 8550 1750
-Text Label 9050 1950 0    50   ~ 0
+Text Label 8800 1950 0    50   ~ 0
 ~CLK
-Wire Wire Line
-	9500 2050 9350 2050
-Wire Wire Line
-	9350 2050 9350 2200
-Wire Wire Line
-	10000 2350 10000 2450
-$Comp
-L power:GND #PWR?
-U 1 1 5DC27B66
-P 9350 2200
-F 0 "#PWR?" H 9350 1950 50  0001 C CNN
-F 1 "GND" H 9355 2027 50  0000 C CNN
-F 2 "" H 9350 2200 50  0001 C CNN
-F 3 "" H 9350 2200 50  0001 C CNN
-	1    9350 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC27E16
-P 10000 2450
-F 0 "#PWR?" H 10000 2200 50  0001 C CNN
-F 1 "GND" H 10005 2277 50  0000 C CNN
-F 2 "" H 10000 2450 50  0001 C CNN
-F 3 "" H 10000 2450 50  0001 C CNN
-	1    10000 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10500 1250 11200 1250
 Wire Wire Line
@@ -683,22 +644,9 @@ Wire Wire Line
 Wire Wire Line
 	10500 1450 11200 1450
 Wire Wire Line
-	10500 1550 11200 1550
-Wire Wire Line
 	10500 1650 11200 1650
 Wire Wire Line
 	10500 1750 11200 1750
-$Comp
-L 74xx:74LS574 U210
-U 1 1 5DC59E56
-P 10000 3900
-F 0 "U210" H 10000 4881 50  0000 C CNN
-F 1 "74HCT574" H 10000 4790 50  0000 C CNN
-F 2 "" H 10000 3900 50  0001 C CNN
-F 3 "" H 10000 3900 50  0001 C CNN
-	1    10000 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 3400 8550 3400
 Wire Wire Line
@@ -720,60 +668,21 @@ Wire Wire Line
 Text Label 9050 4300 0    50   ~ 0
 ~CLK
 Wire Wire Line
-	9500 4400 9350 4400
+	10500 3400 11200 3400
 Wire Wire Line
-	9350 4400 9350 4550
+	10500 3500 11200 3500
 Wire Wire Line
-	10000 4700 10000 4800
-$Comp
-L power:GND #PWR?
-U 1 1 5DC59E6D
-P 9350 4550
-F 0 "#PWR?" H 9350 4300 50  0001 C CNN
-F 1 "GND" H 9355 4377 50  0000 C CNN
-F 2 "" H 9350 4550 50  0001 C CNN
-F 3 "" H 9350 4550 50  0001 C CNN
-	1    9350 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC59E77
-P 10000 4800
-F 0 "#PWR?" H 10000 4550 50  0001 C CNN
-F 1 "GND" H 10005 4627 50  0000 C CNN
-F 2 "" H 10000 4800 50  0001 C CNN
-F 3 "" H 10000 4800 50  0001 C CNN
-	1    10000 4800
-	1    0    0    -1  
-$EndComp
+	10500 3600 11200 3600
 Wire Wire Line
-	10500 3400 10900 3400
+	10500 3700 11200 3700
 Wire Wire Line
-	10500 3500 10900 3500
+	10500 3800 11200 3800
 Wire Wire Line
-	10500 3600 10900 3600
+	10500 3900 11200 3900
 Wire Wire Line
-	10500 3700 10900 3700
+	10500 4000 11200 4000
 Wire Wire Line
-	10500 3800 10900 3800
-Wire Wire Line
-	10500 3900 10900 3900
-Wire Wire Line
-	10500 4000 10900 4000
-Wire Wire Line
-	10500 4100 10900 4100
-$Comp
-L 74xx:74LS574 U211
-U 1 1 5DC7146C
-P 10000 6250
-F 0 "U211" H 10000 7231 50  0000 C CNN
-F 1 "74HCT574" H 10000 7140 50  0000 C CNN
-F 2 "" H 10000 6250 50  0001 C CNN
-F 3 "" H 10000 6250 50  0001 C CNN
-	1    10000 6250
-	1    0    0    -1  
-$EndComp
+	10500 4100 11200 4100
 Wire Wire Line
 	9500 5750 8550 5750
 Wire Wire Line
@@ -795,34 +704,6 @@ Wire Wire Line
 Text Label 9050 6650 0    50   ~ 0
 ~CLK
 Wire Wire Line
-	9500 6750 9350 6750
-Wire Wire Line
-	9350 6750 9350 6900
-Wire Wire Line
-	10000 7050 10000 7150
-$Comp
-L power:GND #PWR?
-U 1 1 5DC71483
-P 9350 6900
-F 0 "#PWR?" H 9350 6650 50  0001 C CNN
-F 1 "GND" H 9355 6727 50  0000 C CNN
-F 2 "" H 9350 6900 50  0001 C CNN
-F 3 "" H 9350 6900 50  0001 C CNN
-	1    9350 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC7148D
-P 10000 7150
-F 0 "#PWR?" H 10000 6900 50  0001 C CNN
-F 1 "GND" H 10005 6977 50  0000 C CNN
-F 2 "" H 10000 7150 50  0001 C CNN
-F 3 "" H 10000 7150 50  0001 C CNN
-	1    10000 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	10500 5750 10900 5750
 Wire Wire Line
 	10500 5850 10900 5850
@@ -838,17 +719,6 @@ Wire Wire Line
 	10500 6350 10900 6350
 Wire Wire Line
 	10500 6450 10900 6450
-$Comp
-L 74xx:74LS574 U212
-U 1 1 5DC8BA8C
-P 10000 8550
-F 0 "U212" H 10000 9531 50  0000 C CNN
-F 1 "74HCT574" H 10000 9440 50  0000 C CNN
-F 2 "" H 10000 8550 50  0001 C CNN
-F 3 "" H 10000 8550 50  0001 C CNN
-	1    10000 8550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 8050 8550 8050
 Wire Wire Line
@@ -870,34 +740,6 @@ Wire Wire Line
 Text Label 9050 8950 0    50   ~ 0
 ~CLK
 Wire Wire Line
-	9500 9050 9350 9050
-Wire Wire Line
-	9350 9050 9350 9200
-Wire Wire Line
-	10000 9350 10000 9450
-$Comp
-L power:GND #PWR?
-U 1 1 5DC8BAA3
-P 9350 9200
-F 0 "#PWR?" H 9350 8950 50  0001 C CNN
-F 1 "GND" H 9355 9027 50  0000 C CNN
-F 2 "" H 9350 9200 50  0001 C CNN
-F 3 "" H 9350 9200 50  0001 C CNN
-	1    9350 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC8BAAD
-P 10000 9450
-F 0 "#PWR?" H 10000 9200 50  0001 C CNN
-F 1 "GND" H 10005 9277 50  0000 C CNN
-F 2 "" H 10000 9450 50  0001 C CNN
-F 3 "" H 10000 9450 50  0001 C CNN
-	1    10000 9450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	10500 8050 10900 8050
 Wire Wire Line
 	10500 8150 10900 8150
@@ -915,8 +757,8 @@ Wire Wire Line
 	10500 8750 10900 8750
 Text Notes 7500 10150 0    50   ~ 0
 Microcode ROMs
-Text Notes 9450 10050 0    50   ~ 0
-Control signal registers:\nthese clean up the control signals\ngenerated by the microcode ROMs\nto avoid glitchy output.
+Text Notes 9200 10250 0    50   ~ 0
+Control signal registers:\nthese clean up the control signals\ngenerated by the microcode ROMs\nto avoid glitchy output.\nIMPORTANT: signals must be\ngenerated such that 0 output\non reset yields correct behavior!
 Wire Wire Line
 	12000 1250 11800 1250
 Wire Wire Line
@@ -935,16 +777,6 @@ Wire Wire Line
 	10500 1150 11200 1150
 Text Label 10600 1150 0    50   ~ 0
 ~uSeqClear
-Wire Wire Line
-	2150 9800 1900 9800
-Wire Wire Line
-	1900 9800 1900 10000
-Wire Wire Line
-	2150 10000 1900 10000
-Connection ~ 1900 10000
-Wire Wire Line
-	1900 10000 1900 10350
-Connection ~ 1900 10350
 Wire Wire Line
 	1900 10350 1900 10550
 Connection ~ 1900 10550
@@ -1451,12 +1283,12 @@ Wire Wire Line
 $Comp
 L 74xx:74LS08 U214
 U 3 1 5E168DCA
-P 2450 9900
-F 0 "U214" H 2450 10225 50  0000 C CNN
-F 1 "74HC08" H 2450 10134 50  0000 C CNN
-F 2 "" H 2450 9900 50  0001 C CNN
-F 3 "" H 2450 9900 50  0001 C CNN
-	3    2450 9900
+P 12300 1750
+F 0 "U214" H 12300 2075 50  0000 C CNN
+F 1 "74HC08" H 12300 1984 50  0000 C CNN
+F 2 "" H 12300 1750 50  0001 C CNN
+F 3 "" H 12300 1750 50  0001 C CNN
+	3    12300 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1533,6 +1365,228 @@ Text Notes 3750 7500 0    50   ~ 0
 uMemRd is asserted for reads\n(but not writes)
 Text Label 2000 8000 0    50   ~ 0
 ~SCLK~
+Text Notes 12600 950  0    50   ~ 0
+generates one pulse, rising edge synchronous\nwith CLK, when uLoadIR is asserted
+$Comp
+L 74xx:74LS273 U209
+U 1 1 5DAE98BB
+P 10000 1550
+F 0 "U209" H 10000 2531 50  0000 C CNN
+F 1 "74HCT273" H 10000 2440 50  0000 C CNN
+F 2 "" H 10000 1550 50  0001 C CNN
+F 3 "" H 10000 1550 50  0001 C CNN
+	1    10000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 750  10250 750 
+Wire Wire Line
+	10250 750  10250 600 
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB2E23F
+P 10250 600
+F 0 "#PWR?" H 10250 450 50  0001 C CNN
+F 1 "VCC" H 10267 773 50  0000 C CNN
+F 2 "" H 10250 600 50  0001 C CNN
+F 3 "" H 10250 600 50  0001 C CNN
+	1    10250 600 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2350 10000 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5DB300E5
+P 10000 2450
+F 0 "#PWR?" H 10000 2200 50  0001 C CNN
+F 1 "GND" H 10005 2277 50  0000 C CNN
+F 2 "" H 10000 2450 50  0001 C CNN
+F 3 "" H 10000 2450 50  0001 C CNN
+	1    10000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS273 U210
+U 1 1 5DBEE833
+P 10000 3900
+F 0 "U210" H 10000 4881 50  0000 C CNN
+F 1 "74HCT273" H 10000 4790 50  0000 C CNN
+F 2 "" H 10000 3900 50  0001 C CNN
+F 3 "" H 10000 3900 50  0001 C CNN
+	1    10000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3100 10250 3100
+Wire Wire Line
+	10250 3100 10250 2950
+$Comp
+L power:VCC #PWR?
+U 1 1 5DBEE83F
+P 10250 2950
+F 0 "#PWR?" H 10250 2800 50  0001 C CNN
+F 1 "VCC" H 10267 3123 50  0000 C CNN
+F 2 "" H 10250 2950 50  0001 C CNN
+F 3 "" H 10250 2950 50  0001 C CNN
+	1    10250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4700 10000 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5DBEE84A
+P 10000 4800
+F 0 "#PWR?" H 10000 4550 50  0001 C CNN
+F 1 "GND" H 10005 4627 50  0000 C CNN
+F 2 "" H 10000 4800 50  0001 C CNN
+F 3 "" H 10000 4800 50  0001 C CNN
+	1    10000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS273 U211
+U 1 1 5DC23E0B
+P 10000 6250
+F 0 "U211" H 10000 7231 50  0000 C CNN
+F 1 "74HCT273" H 10000 7140 50  0000 C CNN
+F 2 "" H 10000 6250 50  0001 C CNN
+F 3 "" H 10000 6250 50  0001 C CNN
+	1    10000 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5450 10250 5450
+Wire Wire Line
+	10250 5450 10250 5300
+$Comp
+L power:VCC #PWR?
+U 1 1 5DC23E13
+P 10250 5300
+F 0 "#PWR?" H 10250 5150 50  0001 C CNN
+F 1 "VCC" H 10267 5473 50  0000 C CNN
+F 2 "" H 10250 5300 50  0001 C CNN
+F 3 "" H 10250 5300 50  0001 C CNN
+	1    10250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 7050 10000 7150
+$Comp
+L power:GND #PWR?
+U 1 1 5DC23E1A
+P 10000 7150
+F 0 "#PWR?" H 10000 6900 50  0001 C CNN
+F 1 "GND" H 10005 6977 50  0000 C CNN
+F 2 "" H 10000 7150 50  0001 C CNN
+F 3 "" H 10000 7150 50  0001 C CNN
+	1    10000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS273 U212
+U 1 1 5DC4393A
+P 10000 8550
+F 0 "U212" H 10000 9531 50  0000 C CNN
+F 1 "74HCT273" H 10000 9440 50  0000 C CNN
+F 2 "" H 10000 8550 50  0001 C CNN
+F 3 "" H 10000 8550 50  0001 C CNN
+	1    10000 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 7750 10250 7750
+Wire Wire Line
+	10250 7750 10250 7600
+$Comp
+L power:VCC #PWR?
+U 1 1 5DC43942
+P 10250 7600
+F 0 "#PWR?" H 10250 7450 50  0001 C CNN
+F 1 "VCC" H 10267 7773 50  0000 C CNN
+F 2 "" H 10250 7600 50  0001 C CNN
+F 3 "" H 10250 7600 50  0001 C CNN
+	1    10250 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 9350 10000 9450
+$Comp
+L power:GND #PWR?
+U 1 1 5DC43949
+P 10000 9450
+F 0 "#PWR?" H 10000 9200 50  0001 C CNN
+F 1 "GND" H 10005 9277 50  0000 C CNN
+F 2 "" H 10000 9450 50  0001 C CNN
+F 3 "" H 10000 9450 50  0001 C CNN
+	1    10000 9450
+	1    0    0    -1  
+$EndComp
+Text Label 1450 2400 0    50   ~ 0
+~RST
+Wire Wire Line
+	9500 2050 9250 2050
+Text Label 8800 2050 0    50   ~ 0
+~RST
+Wire Wire Line
+	9500 4400 9250 4400
+Wire Wire Line
+	9250 4400 9250 2050
+Connection ~ 9250 2050
+Wire Wire Line
+	9250 2050 8700 2050
+Text Label 9300 4400 0    50   ~ 0
+~RST
+Wire Wire Line
+	9500 6750 9250 6750
+Wire Wire Line
+	9250 6750 9250 4400
+Connection ~ 9250 4400
+Text Label 9300 6750 0    50   ~ 0
+~RST
+Wire Wire Line
+	9500 9050 9250 9050
+Wire Wire Line
+	9250 9050 9250 6750
+Connection ~ 9250 6750
+Text Label 9300 9050 0    50   ~ 0
+~RST
+Text Label 10550 3400 0    50   ~ 0
+uLoadAR
+Text Label 10600 1450 0    50   ~ 0
+~uSendPC
+Text HLabel 11200 3400 2    50   Output ~ 0
+uLoadAR
+Text HLabel 11200 1450 2    50   Output ~ 0
+~uSendPC
+Text Label 10600 1550 0    50   ~ 0
+uIncPC
+Text HLabel 13150 1750 2    50   Output ~ 0
+uIncPCClk
+Text Label 10600 1650 0    50   ~ 0
+~uLoadPCLo
+Text Label 10600 1750 0    50   ~ 0
+~uLoadPCHi
+Text HLabel 11200 1650 2    50   Output ~ 0
+~uLoadPCLo
+Text HLabel 11200 1750 2    50   Output ~ 0
+~uLoadPCHi
+Wire Wire Line
+	12000 1850 11800 1850
+Wire Wire Line
+	11800 1850 11800 1250
+Connection ~ 11800 1250
+Wire Wire Line
+	11900 1550 11900 1650
+Wire Wire Line
+	11900 1650 12000 1650
+Wire Wire Line
+	10500 1550 11900 1550
+Wire Wire Line
+	12600 1750 13150 1750
+Text Notes 12600 1600 0    50   ~ 0
+generates one pulse, rising edge synchronous\nwith CLK, when uIncPC is asserted
 Wire Bus Line
 	5650 600  5650 1600
 Wire Bus Line
@@ -1541,6 +1595,4 @@ Wire Bus Line
 	6550 600  6550 8250
 Wire Bus Line
 	6350 700  6350 9050
-Text Notes 12600 950  0    50   ~ 0
-generates one pulse, rising edge synchronous\nwith CLK, when uLoadIR is asserted
 $EndSCHEMATC

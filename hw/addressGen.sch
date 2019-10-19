@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr User 13750 10625
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
