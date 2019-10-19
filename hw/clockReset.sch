@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -19,8 +19,8 @@ L ya68k:XTAL_OSC U?
 U 1 1 5DABBACF
 P 5450 4300
 AR Path="/5DA2EB51/5DABBACF" Ref="U?"  Part="1" 
-AR Path="/5DAB38C5/5DABBACF" Ref="U?"  Part="1" 
-F 0 "U?" H 5450 4737 60  0000 C CNN
+AR Path="/5DAB38C5/5DABBACF" Ref="U301"  Part="1" 
+F 0 "U301" H 5450 4737 60  0000 C CNN
 F 1 "XTAL_OSC" H 5450 4631 60  0000 C CNN
 F 2 "" H 5450 4300 60  0000 C CNN
 F 3 "" H 5450 4300 60  0000 C CNN
@@ -32,8 +32,8 @@ L 74xx:74HC74 U?
 U 1 1 5DABBAD5
 P 6800 4150
 AR Path="/5DA2EB51/5DABBAD5" Ref="U?"  Part="1" 
-AR Path="/5DAB38C5/5DABBAD5" Ref="U?"  Part="1" 
-F 0 "U?" H 6800 4631 50  0000 C CNN
+AR Path="/5DAB38C5/5DABBAD5" Ref="U303"  Part="1" 
+F 0 "U303" H 6800 4631 50  0000 C CNN
 F 1 "74HC74" H 6800 4540 50  0000 C CNN
 F 2 "" H 6800 4150 50  0001 C CNN
 F 3 "" H 6800 4150 50  0001 C CNN
@@ -53,7 +53,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 4050 6500 4050
 Text Notes 6100 3350 0    50   ~ 0
-Clock cadence:\n- positive edge on ~CLK~ latches ucode output\n- positive edge on CLK commits state\nBecause ~RST~ sets the FF, first positive edge is on ~CLK~,\nensuring control signals are valid coming out of reset.\nSCLK is the main oscillator clock, and is available for\ngeneration of finer-grained signals.
+Clock cadence:\n\n- positive edge on ~CLK~ latches ucode output\n- positive edge on CLK commits state\n\nBecause ~RST~ sets the FF, first positive edge is on ~CLK~,\nensuring control signals are valid coming out of reset.\n\nSCLK is the main oscillator clock, and is available for\ngeneration of signals requiring finer-grained timing.
 Wire Wire Line
 	6800 3850 5950 3850
 Wire Wire Line
@@ -127,8 +127,8 @@ L ya68k:MAX708 U?
 U 1 1 5DABDA79
 P 3350 2450
 AR Path="/5DACE71F/5DABDA79" Ref="U?"  Part="1" 
-AR Path="/5DAB38C5/5DABDA79" Ref="U?"  Part="1" 
-F 0 "U?" H 3350 2937 60  0000 C CNN
+AR Path="/5DAB38C5/5DABDA79" Ref="U302"  Part="1" 
+F 0 "U302" H 3350 2937 60  0000 C CNN
 F 1 "MAX708" H 3350 2831 60  0000 C CNN
 F 2 "" H 3350 2450 60  0000 C CNN
 F 3 "" H 3350 2450 60  0000 C CNN
@@ -140,8 +140,8 @@ L Switch:SW_Push SW?
 U 1 1 5DABDA7F
 P 2000 2550
 AR Path="/5DACE71F/5DABDA7F" Ref="SW?"  Part="1" 
-AR Path="/5DAB38C5/5DABDA7F" Ref="SW?"  Part="1" 
-F 0 "SW?" H 2000 2835 50  0000 C CNN
+AR Path="/5DAB38C5/5DABDA7F" Ref="SW301"  Part="1" 
+F 0 "SW301" H 2000 2835 50  0000 C CNN
 F 1 "SW_Push" H 2000 2744 50  0000 C CNN
 F 2 "" H 2000 2750 50  0001 C CNN
 F 3 "" H 2000 2750 50  0001 C CNN
@@ -211,8 +211,8 @@ L device:LED D?
 U 1 1 5DABDAA1
 P 4650 1750
 AR Path="/5DACE71F/5DABDAA1" Ref="D?"  Part="1" 
-AR Path="/5DAB38C5/5DABDAA1" Ref="D?"  Part="1" 
-F 0 "D?" V 4689 1632 50  0000 R CNN
+AR Path="/5DAB38C5/5DABDAA1" Ref="D301"  Part="1" 
+F 0 "D301" V 4689 1632 50  0000 R CNN
 F 1 "LED" V 4598 1632 50  0000 R CNN
 F 2 "" H 4650 1750 50  0001 C CNN
 F 3 "" H 4650 1750 50  0001 C CNN
@@ -228,8 +228,8 @@ L device:R R?
 U 1 1 5DABDAA9
 P 4650 1300
 AR Path="/5DACE71F/5DABDAA9" Ref="R?"  Part="1" 
-AR Path="/5DAB38C5/5DABDAA9" Ref="R?"  Part="1" 
-F 0 "R?" H 4720 1346 50  0000 L CNN
+AR Path="/5DAB38C5/5DABDAA9" Ref="R301"  Part="1" 
+F 0 "R301" H 4720 1346 50  0000 L CNN
 F 1 "R" H 4720 1255 50  0000 L CNN
 F 2 "" V 4580 1300 50  0001 C CNN
 F 3 "" H 4650 1300 50  0001 C CNN
@@ -279,4 +279,102 @@ Text HLabel 7950 5000 2    50   Output ~ 0
 SCLK
 Text Notes 6350 6950 0    50   ~ 0
 clock/reset circuit
+$Comp
+L 74xx:74HC74 U303
+U 2 1 5DADC92D
+P 2600 6400
+F 0 "U303" H 2600 6878 50  0000 C CNN
+F 1 "74HC74" H 2600 6787 50  0000 C CNN
+F 2 "" H 2600 6400 50  0001 C CNN
+F 3 "" H 2600 6400 50  0001 C CNN
+	2    2600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U303
+U 3 1 5DADC9F1
+P 4050 6400
+F 0 "U303" H 4280 6446 50  0000 L CNN
+F 1 "74HC74" H 4280 6355 50  0000 L CNN
+F 2 "" H 4050 6400 50  0001 C CNN
+F 3 "" H 4050 6400 50  0001 C CNN
+	3    4050 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6700 2600 6900
+$Comp
+L power:GND #PWR?
+U 1 1 5DADD0F1
+P 2600 6900
+F 0 "#PWR?" H 2600 6650 50  0001 C CNN
+F 1 "GND" H 2605 6727 50  0000 C CNN
+F 2 "" H 2600 6900 50  0001 C CNN
+F 3 "" H 2600 6900 50  0001 C CNN
+	1    2600 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6400 2100 6400
+Wire Wire Line
+	2100 6400 2100 6900
+Wire Wire Line
+	2300 6300 2100 6300
+Wire Wire Line
+	2100 6300 2100 6400
+Connection ~ 2100 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5DADDF7C
+P 2100 6900
+F 0 "#PWR?" H 2100 6650 50  0001 C CNN
+F 1 "GND" H 2105 6727 50  0000 C CNN
+F 2 "" H 2100 6900 50  0001 C CNN
+F 3 "" H 2100 6900 50  0001 C CNN
+	1    2100 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6100 2850 6100
+Wire Wire Line
+	2850 6100 2850 5900
+$Comp
+L power:VCC #PWR?
+U 1 1 5DADE844
+P 2850 5900
+F 0 "#PWR?" H 2850 5750 50  0001 C CNN
+F 1 "VCC" H 2867 6073 50  0000 C CNN
+F 2 "" H 2850 5900 50  0001 C CNN
+F 3 "" H 2850 5900 50  0001 C CNN
+	1    2850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6000 4050 5900
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAE0A62
+P 4050 5900
+F 0 "#PWR?" H 4050 5750 50  0001 C CNN
+F 1 "VCC" H 4067 6073 50  0000 C CNN
+F 2 "" H 4050 5900 50  0001 C CNN
+F 3 "" H 4050 5900 50  0001 C CNN
+	1    4050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6800 4050 6900
+$Comp
+L power:GND #PWR?
+U 1 1 5DAE1C0A
+P 4050 6900
+F 0 "#PWR?" H 4050 6650 50  0001 C CNN
+F 1 "GND" H 4055 6727 50  0000 C CNN
+F 2 "" H 4050 6900 50  0001 C CNN
+F 3 "" H 4050 6900 50  0001 C CNN
+	1    4050 6900
+	1    0    0    -1  
+$EndComp
+Text Notes 2350 5750 0    50   ~ 0
+unused
 $EndSCHEMATC

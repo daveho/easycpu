@@ -1541,4 +1541,6 @@ Wire Bus Line
 	6550 600  6550 8250
 Wire Bus Line
 	6350 700  6350 9050
+Text Notes 12600 950  0    50   ~ 0
+generates one pulse, rising edge synchronous\nwith CLK, when uLoadIR is asserted
 $EndSCHEMATC
