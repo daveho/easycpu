@@ -5,7 +5,7 @@
 # sequencer is at time step 0, instruction fetch will occur.
 pattern insFetch *
   AR <- PC
-  PC <- PC + 4; IR <- Mem
+  PC <- PC + 1; IR <- Mem
 end
 
 # No-op instruction.
