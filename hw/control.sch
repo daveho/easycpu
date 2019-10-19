@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 15400 11900
 encoding utf-8
-Sheet 3 5
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -1521,8 +1521,8 @@ Connection ~ 9000 4300
 Wire Wire Line
 	9000 8950 9000 6650
 Connection ~ 9000 6650
-Text Notes 4600 8700 0    50   ~ 0
-External ~R~ and ~W~ signals for\nexternal memory transactions
+Text Notes 5050 8550 0    50   ~ 0
+~R~ and ~W~ signals for\nexternal memory transactions
 Wire Bus Line
 	5650 600  5650 1600
 Wire Bus Line

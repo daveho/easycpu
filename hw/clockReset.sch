@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 5
+Sheet 5 4
 Title ""
 Date ""
 Rev ""
@@ -277,6 +277,6 @@ Text HLabel 7950 4250 2    50   Output ~ 0
 ~CLK
 Text HLabel 7950 5000 2    50   Output ~ 0
 SCLK
-Text Notes 7050 6700 0    50   ~ 0
+Text Notes 6350 6950 0    50   ~ 0
 clock/reset circuit
 $EndSCHEMATC
