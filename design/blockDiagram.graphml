@@ -737,7 +737,7 @@ or AIn[7:0]<y:LabelModel>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
             <y:Point x="719.1414914908323" y="173.00001525878906"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="2.0"/>
+          <y:LineStyle color="#000000" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
