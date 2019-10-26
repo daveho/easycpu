@@ -275,12 +275,12 @@ Wire Wire Line
 $Comp
 L 74xx:74LS139 U502
 U 2 1 5DBE18D9
-P 2100 6400
-F 0 "U502" H 2100 6767 50  0000 C CNN
-F 1 "74HC139" H 2100 6676 50  0000 C CNN
-F 2 "" H 2100 6400 50  0001 C CNN
-F 3 "" H 2100 6400 50  0001 C CNN
-	2    2100 6400
+P 2050 7150
+F 0 "U502" H 2050 7517 50  0000 C CNN
+F 1 "74HC139" H 2050 7426 50  0000 C CNN
+F 2 "" H 2050 7150 50  0001 C CNN
+F 3 "" H 2050 7150 50  0001 C CNN
+	2    2050 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -294,47 +294,17 @@ F 3 "" H 4800 7150 50  0001 C CNN
 	3    4800 7150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 6600 1150 6600
-Text HLabel 1150 6600 0    50   Input ~ 0
-~OpRegOE
-Wire Wire Line
-	1600 5500 1400 5500
-Wire Wire Line
-	1600 5600 1300 5600
-Wire Wire Line
-	1600 6300 1400 6300
 Text HLabel 1150 5600 0    50   Input ~ 0
 OpRegAddr0
 Text HLabel 1150 5500 0    50   Input ~ 0
 OpRegAddr1
-Wire Wire Line
-	1400 6300 1400 5500
-Connection ~ 1400 5500
-Wire Wire Line
-	1400 5500 1150 5500
-Wire Wire Line
-	1300 6400 1300 5600
-Wire Wire Line
-	1300 6400 1600 6400
-Connection ~ 1300 5600
-Wire Wire Line
-	1300 5600 1150 5600
-Wire Wire Line
-	2600 6300 3150 6300
-Wire Wire Line
-	2600 6400 3150 6400
-Wire Wire Line
-	2600 6500 3150 6500
-Wire Wire Line
-	2600 6600 3150 6600
-Text Label 2700 6300 0    50   ~ 0
+Text Label 3850 5950 0    50   ~ 0
 ~OpRegOE0
-Text Label 2700 6400 0    50   ~ 0
+Text Label 3850 6050 0    50   ~ 0
 ~OpRegOE1
-Text Label 2700 6500 0    50   ~ 0
+Text Label 3850 6150 0    50   ~ 0
 ~OpRegOE2
-Text Label 2700 6600 0    50   ~ 0
+Text Label 3850 6250 0    50   ~ 0
 ~OpRegOE3
 Text Label 4850 2600 0    50   ~ 0
 ~OpRegOE0
@@ -462,19 +432,19 @@ F 3 "" H 3600 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 5700 3100 5700
+	2600 5700 2800 5700
 Wire Wire Line
 	3100 5700 3100 5050
 Wire Wire Line
 	3100 5050 3300 5050
 Wire Wire Line
-	2600 5600 3050 5600
+	2600 5600 2850 5600
 Wire Wire Line
 	3050 5600 3050 4500
 Wire Wire Line
 	3050 4500 3300 4500
 Wire Wire Line
-	2600 5500 3000 5500
+	2600 5500 2900 5500
 Wire Wire Line
 	3000 5500 3000 3950
 Wire Wire Line
@@ -498,7 +468,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 4950 7150 4950
 Wire Wire Line
-	2600 5800 3150 5800
+	2600 5800 2750 5800
 Wire Wire Line
 	3150 5800 3150 5600
 Wire Wire Line
@@ -1019,31 +989,15 @@ Entry Wire Line
 	9450 2300 9550 2200
 Entry Wire Line
 	9450 2400 9550 2300
-Text HLabel 9950 1600 2    50   3State ~ 0
-OpOut0
-Text HLabel 9950 1700 2    50   3State ~ 0
-OpOut1
-Text HLabel 9950 1800 2    50   3State ~ 0
-OpOut2
-Text HLabel 9950 1900 2    50   3State ~ 0
-OpOut3
-Text HLabel 9950 2000 2    50   3State ~ 0
-OpOut4
-Text HLabel 9950 2100 2    50   3State ~ 0
-OpOut5
-Text HLabel 9950 2200 2    50   3State ~ 0
-OpOut6
-Text HLabel 9950 2300 2    50   3State ~ 0
-OpOut7
 Wire Notes Line
 	550  3450 4450 3450
 Wire Notes Line
-	4450 3450 4450 7150
+	4450 3450 4450 6400
 Wire Notes Line
-	4450 7150 550  7150
+	4450 6400 550  6400
 Wire Notes Line
-	550  7150 550  3450
-Text Notes 2950 7050 2    50   ~ 0
+	550  6400 550  3450
+Text Notes 2600 4950 2    50   ~ 0
 operand register selection\nand output control logic
 Wire Wire Line
 	4800 6650 4800 6550
@@ -1099,6 +1053,65 @@ Text Notes 8150 5350 0    50   ~ 0
 R3
 Text Notes 3350 2900 0    50   ~ 0
 A (accumulator)
+Text HLabel 9950 1600 2    50   Output ~ 0
+OpOut0
+Text HLabel 9950 1700 2    50   Output ~ 0
+OpOut1
+Text HLabel 9950 1800 2    50   Output ~ 0
+OpOut2
+Text HLabel 9950 1900 2    50   Output ~ 0
+OpOut3
+Text HLabel 9950 2000 2    50   Output ~ 0
+OpOut4
+Text HLabel 9950 2100 2    50   Output ~ 0
+OpOut5
+Text HLabel 9950 2200 2    50   Output ~ 0
+OpOut6
+Text HLabel 9950 2300 2    50   Output ~ 0
+OpOut7
+Wire Wire Line
+	1150 5600 1600 5600
+Wire Wire Line
+	1150 5500 1600 5500
+Wire Wire Line
+	2900 5950 2900 5500
+Wire Wire Line
+	2900 5950 4300 5950
+Connection ~ 2900 5500
+Wire Wire Line
+	2900 5500 3000 5500
+Wire Wire Line
+	2850 6050 2850 5600
+Wire Wire Line
+	2850 6050 4300 6050
+Connection ~ 2850 5600
+Wire Wire Line
+	2850 5600 3050 5600
+Wire Wire Line
+	2800 6150 2800 5700
+Wire Wire Line
+	2800 6150 4300 6150
+Connection ~ 2800 5700
+Wire Wire Line
+	2800 5700 3100 5700
+Wire Wire Line
+	2750 6250 2750 5800
+Wire Wire Line
+	2750 6250 4300 6250
+Connection ~ 2750 5800
+Wire Wire Line
+	2750 5800 3150 5800
+Wire Wire Line
+	1550 7050 1400 7050
+Wire Wire Line
+	1400 7050 1400 7150
+Wire Wire Line
+	1550 7150 1400 7150
+Connection ~ 1400 7150
+Wire Wire Line
+	1400 7150 1400 7350
+Wire Wire Line
+	1550 7350 1400 7350
 Wire Bus Line
 	2100 800  6950 800 
 Wire Bus Line
@@ -1117,4 +1130,20 @@ Wire Bus Line
 	4700 900  4700 4650
 Wire Bus Line
 	6650 1700 6650 5700
+Connection ~ 1400 7350
+Wire Wire Line
+	1400 7350 1400 7550
+$Comp
+L power:GND #PWR?
+U 1 1 5DE8BE1E
+P 1400 7550
+F 0 "#PWR?" H 1400 7300 50  0001 C CNN
+F 1 "GND" H 1405 7377 50  0000 C CNN
+F 2 "" H 1400 7550 50  0001 C CNN
+F 3 "" H 1400 7550 50  0001 C CNN
+	1    1400 7550
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 6700 0    50   ~ 0
+unused
 $EndSCHEMATC
