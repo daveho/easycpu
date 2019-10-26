@@ -1,15 +1,36 @@
 #! /usr/bin/env ruby
 
+# Microcode signals.
+# Signals prefixed with "-" are active-low.
+# All signals are low on reset, so active low signals
+# will be asserted on reset.
 SIGNALS = [
   'uLoadIR',        # load instruction register from D bus
   '-uSeqClear',     # clear microprogram sequencer
   'uMem',           # memory transaction (read or write main memory)
   'uMemRd',         # memory transaction is a read
-  '-uSendPC',       # PC sends output to A bus
   'uIncPC',         # increment program counter
+
+  # sending pointer registers to AR
+  '-uSendPCtoAOut', # PC sends output to AOut bus
+  'uSendXtoAOut',   # X sends output to AOut bus
+  'uSendSPtoAOut',  # SP sends output to AOut bus
+
+  # loading low/high bytes of pointer registers
   '-uLoadPCLo',     # load low byte of program counter
   '-uLoadPCHi',     # load high byte of program counter
+  'uLoadSPLo',      # load low byte of SP from AIn[7:0]
+  'uLoadSPHi',      # load high byte of SP from AIn[15:8]
+  'uLoadXLo',       # load low byte of X from AIn[7:0]
+  'uLoadXHi',       # load high byte of X from AIn[15:8]
   'uLoadAR',        # load address register from A bus
+
+  # buffers to send D bus to low/high bytes of AIn bus
+  '-uSendDtoAInLo', # send D bus value to AIn[7:0]
+  '-uSendDtoAInHi', # send D bus value to AIn[15:8]
+
+  # misc. constant value signals
+  '-uSendInitPC',   # send initial PC low/high byte value to D bus
 ];
 
 INSTRUCTIONS = [
