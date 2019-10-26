@@ -5,37 +5,61 @@
 # All signals are low on reset, so active low signals
 # will be asserted on reset.
 SIGNALS = [
-  'uLoadIR',        # load instruction register from D bus
-  '-uSeqClear',     # clear microprogram sequencer
-  'uMem',           # memory transaction (read or write main memory)
-  'uMemRd',         # memory transaction is a read
-  'uIncPC',         # increment program counter
+  # register load signals
+  'uLoadIR',           # load instruction register from D bus
+  'uLoadAR',           # load address register from A bus
+  'uLoadA',            # load accumulator
+  'uLoadOpReg',        # load operand register (R0-R3)
+  '-uLoadPC',          # load program counter
+  'uLoadSP',           # load SP from AIn
+  'uLoadX',            # load X from AIn
+  'uLoadCC',           # load condition code register from ALU CC output
+  '-uSeqClear',        # clear microprogram sequencer
 
-  # sending pointer registers to AR
-  '-uSendPCtoAOut', # PC sends output to AOut bus
-  'uSendXtoAOut',   # X sends output to AOut bus
-  'uSendSPtoAOut',  # SP sends output to AOut bus
+  # operand register select
+  'uOpRegSel:2',       # operand register selection (0-3)
 
-  # loading low/high bytes of pointer registers
-  '-uLoadPCLo',     # load low byte of program counter
-  '-uLoadPCHi',     # load high byte of program counter
-  'uLoadSPLo',      # load low byte of SP from AIn[7:0]
-  'uLoadSPHi',      # load high byte of SP from AIn[15:8]
-  'uLoadXLo',       # load low byte of X from AIn[7:0]
-  'uLoadXHi',       # load high byte of X from AIn[15:8]
-  'uLoadAR',        # load address register from A bus
+  # memory bus signals
+  'uMem',              # memory transaction (read or write main memory)
+  'uMemRd',            # memory transaction is a read
 
-  # buffers to send D bus to low/high bytes of AIn bus
-  '-uSendDtoAInLo', # send D bus value to AIn[7:0]
-  '-uSendDtoAInHi', # send D bus value to AIn[15:8]
+  # outputs to AOut bus
+  '-uSendPCtoAOut',    # PC sends output to AOut bus
+  'uSendXtoAOut',      # X sends output to AOut bus
+  'uSendSPtoAOut',     # SP sends output to AOut bus
 
-  # misc. constant value signals
-  '-uSendInitPC',   # send initial PC low/high byte value to D bus
+  # outputs to AHi and ALo busses
+  '-uSendDtoAHi',      # send D bus value to AHi
+  'uGenAddrToAHiLo',   # send generated address (high bits) to AHi/ALo
+  'uOpRegToALo',       # send op reg output (A0-A3) to ALo
+  '-uInitPCToAHiLo',   # send initial PC byte value (0xC0) to AHi/ALo busses
+
+  # outputs to OpA bus
+  'uAccToOpA',         # send accumulator output to OpA
+  'uMinus1ToOpA',      # send constant -1 to OpA
+  'uOneToOpA',         # send constant 1 to OpA
+
+  # outputs to Offset bus
+  'uOpRegToOffset',    # send op reg output (A0-A3) to Offset
+  'uMinus1ToOffset',   # send constant -1 to Offset
+  'uZeroToOffset',     # send constant 0 to Offset
+  'uOneToOffset',      # send constant 1 to Offset
+
+  # outputs to D bus
+  'uExtDataToD',       # send external data bus to D
+  'uALUToD',           # send ALU data output to D
+  'uCCToD',            # send condition codes to D
+
+  # ALU operation
+  'uALUFunc:4',        # ALU function code (4 bits)
+  'uALUMode',          # ALU mode
+  'uALUCarryIn',       # ALU carry in
 ];
 
 INSTRUCTIONS = [
-  [ 'AR <- PC',        ['uLoadAR', '-uSendPC'] ],
-  [ 'PC <- PC + 1',    ['uIncPC'] ],
+  [ 'AR <- PC',        ['-uSendPCtoAOut', 'uZeroToOffset', 'uLoadAR'] ],
+  [ 'PC <- PC + 1',    ['uSendPCtoAOut', 'uOneToOffset', 'uGenAddrToAHiLo',
+                        'uLoadPC'] ],
   [ 'IR <- Mem',       ['uMem', 'uMemRd', 'uLoadIR'] ],
   [ 'EndIns',          ['-uSeqClear'] ],
 ]
@@ -93,6 +117,8 @@ def handle_pattern(first_line)
 
   return generated_signals
 end
+
+puts "#{SIGNALS.length} ucode signals"
 
 done = false
 while !done

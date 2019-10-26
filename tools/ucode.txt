@@ -18,5 +18,5 @@ pattern jmpAbs 0x80
   AR <- PC
   R3 <- Mem; PC <- PC + 1
   AR <- PC
-  PCHi <- Mem; PCLo <- R3; EndIns
+  PC <- Mem:R3; EndIns
 end
