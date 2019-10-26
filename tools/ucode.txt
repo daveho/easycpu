@@ -13,6 +13,7 @@ pattern nop 0x00
   EndIns
 end
 
+# Unconditional absolute jump to 18 bit immediate address.
 pattern jmpAbs 0x80
   AR <- PC
   R3 <- Mem; PC <- PC + 1
