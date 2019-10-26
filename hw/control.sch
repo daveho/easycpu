@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:easycpu-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr User 15400 11900
 encoding utf-8
