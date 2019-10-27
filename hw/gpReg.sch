@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -1112,6 +1112,22 @@ Wire Wire Line
 	1400 7150 1400 7350
 Wire Wire Line
 	1550 7350 1400 7350
+Connection ~ 1400 7350
+Wire Wire Line
+	1400 7350 1400 7550
+$Comp
+L power:GND #PWR?
+U 1 1 5DE8BE1E
+P 1400 7550
+F 0 "#PWR?" H 1400 7300 50  0001 C CNN
+F 1 "GND" H 1405 7377 50  0000 C CNN
+F 2 "" H 1400 7550 50  0001 C CNN
+F 3 "" H 1400 7550 50  0001 C CNN
+	1    1400 7550
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 6700 0    50   ~ 0
+unused
 Wire Bus Line
 	2100 800  6950 800 
 Wire Bus Line
@@ -1130,20 +1146,4 @@ Wire Bus Line
 	4700 900  4700 4650
 Wire Bus Line
 	6650 1700 6650 5700
-Connection ~ 1400 7350
-Wire Wire Line
-	1400 7350 1400 7550
-$Comp
-L power:GND #PWR?
-U 1 1 5DE8BE1E
-P 1400 7550
-F 0 "#PWR?" H 1400 7300 50  0001 C CNN
-F 1 "GND" H 1405 7377 50  0000 C CNN
-F 2 "" H 1400 7550 50  0001 C CNN
-F 3 "" H 1400 7550 50  0001 C CNN
-	1    1400 7550
-	1    0    0    -1  
-$EndComp
-Text Notes 1900 6700 0    50   ~ 0
-unused
 $EndSCHEMATC
