@@ -2,4 +2,5 @@
   (lib (name Connector_Generic)(type Legacy)(uri ${KIPRJMOD}/Connector_Generic.lib)(options "")(descr ""))
   (lib (name power)(type Legacy)(uri ${KIPRJMOD}/power.lib)(options "")(descr ""))
   (lib (name OSTTA020161)(type Legacy)(uri ${KIPRJMOD}/OSTTA020161.lib)(options "")(descr ""))
+  (lib (name device)(type Legacy)(uri ${KIPRJMOD}/device.lib)(options "")(descr ""))
 )
