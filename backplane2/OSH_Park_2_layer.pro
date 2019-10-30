@@ -1,4 +1,4 @@
-update=do 04 jul 2019 21:56:22 CEST
+update=Wed 30 Oct 2019 11:04:48 AM EDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -257,3 +257,13 @@ uViaDrill=0.254
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
