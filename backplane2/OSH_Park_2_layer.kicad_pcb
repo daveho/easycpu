@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 10)
-    (tracks 2126)
+    (tracks 2128)
     (zones 0)
     (modules 27)
     (nets 484)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.4)
     (user_trace_width 0.1524)
     (user_trace_width 0.2)
     (user_trace_width 0.3)
@@ -2456,7 +2456,7 @@
   )
 
   (module LED_THT:LED_D5.0mm (layer F.Cu) (tedit 5995936A) (tstamp 5DBA88C6)
-    (at 206.756 100.076)
+    (at 206.756 101.346)
     (descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
     (tags "LED diameter 5.0mm 2 pins")
     (path /5F59F20B)
@@ -4012,8 +4012,10 @@
   (segment (start 210.693 87.444858) (end 210.693 75.859) (width 1.5) (layer F.Cu) (net 2))
   (segment (start 206.756 90.003) (end 207.772 88.987) (width 0.4) (layer F.Cu) (net 2))
   (segment (start 206.756 100.076) (end 206.756 90.003) (width 0.4) (layer F.Cu) (net 2))
+  (segment (start 206.756 100.076) (end 206.756 101.346) (width 0.4) (layer F.Cu) (net 2))
   (segment (start 211.963 97.409) (end 211.963 94.742) (width 0.4) (layer F.Cu) (net 3))
   (segment (start 209.296 100.076) (end 211.963 97.409) (width 0.4) (layer F.Cu) (net 3))
+  (segment (start 209.296 100.076) (end 209.296 101.346) (width 0.4) (layer F.Cu) (net 3))
   (segment (start 70.637599 151.612401) (end 72.39 149.86) (width 1.5) (layer B.Cu) (net 4))
   (segment (start 53.34 149.86) (end 55.092401 151.612401) (width 1.5) (layer B.Cu) (net 4))
   (segment (start 55.092401 151.612401) (end 70.637599 151.612401) (width 1.5) (layer B.Cu) (net 4))
